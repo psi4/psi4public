@@ -136,6 +136,13 @@ if(TARGET BrianQC::static_wrapper)
     )
 endif()
 
+if(TARGET OpenOrbitalOptimizer::OpenOrbitalOptimizer)
+  target_link_libraries(core
+    PRIVATE
+      OpenOrbitalOptimizer::OpenOrbitalOptimizer
+    )
+endif()
+
 if(Fortran_ENABLED AND CMAKE_Fortran_COMPILER_ID MATCHES Intel)
   # Enable call to for_rtl_init_() which is required if using the
   # Intel fortran compiler
