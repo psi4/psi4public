@@ -1,5 +1,5 @@
 if(${ENABLE_Einsums})
-    find_package(Einsums 0.6 CONFIG)
+    find_package(Einsums 0.6.1 CONFIG)
 
     if(TARGET Einsums::einsums)
         get_property(_loc TARGET Einsums::einsums PROPERTY LOCATION)
